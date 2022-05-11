@@ -161,3 +161,9 @@ http://man.openbsd.org/OpenBSD-current/man1/tmux.1
 可以通过 $HOME/.tmux.conf 更改配置, 参考一些比较好的 tmux 配置:
 https://github.com/gpakosz/.tmux
 
+
+##############################################################################
+# 常见问题解决方案
+##############################################################################
+1、tmux窗口命名，后自动又重命名的问题
+运行命令：tmux set-option -g allow-rename off 即可，注所有的set-option前都需要加命令tmux
